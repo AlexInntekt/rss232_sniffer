@@ -6,9 +6,14 @@ def to_hex(input_str):
     # print(str(input_str))
     outpur_str = str(input_str)
 
-    # outpur_str = " ".join("{:02x}".format(ord(str(c))) for c in input_str)
+    content = ""
+    for c in input_str:
+        print(c)
+
+    # content = ord(str(c))
+    # outpur_str = " ".join("{:02x}".format(content) for c in input_str)
     # 4b 41 20 30 20 46 46 0d
-    print(outpur_str)
+    # print(outpur_str)
     return outpur_str
  
  
@@ -56,10 +61,10 @@ if __name__ == '__main__':
     main()
  
  
-def to_hex(input_str):
-    outpur_str = " ".join("{:02x}".format(ord(c)) for c in input_str)
-    # 4b 41 20 30 20 46 46 0d
-    return outpur_str
+# def to_hex(input_str):
+#     outpur_str = " ".join("{:02x}".format(ord(c)) for c in input_str)
+#     # 4b 41 20 30 20 46 46 0d
+#     return outpur_str
  
  
 def main():
